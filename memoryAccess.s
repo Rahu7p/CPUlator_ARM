@@ -31,7 +31,7 @@ main:
 	ldr	r0, [r1], #-4// first r0=word pointed by r1, then r1=r1+4
 	
 	/* Memory optional modifiers */
-	ldr		r0, [r1, #8]// word
+	ldr	r0, [r1, #8]// word
 	ldrb	r0, [r1, #8]// unsigned byte
 	ldrsb	r0, [r1, #8]// signed byte
 	ldrh	r0, [r1, #8]// unsigned halfword
@@ -39,4 +39,4 @@ main:
 	ldrd	r2, r3, [r1, #8]// double word
 	
 foreverLoop:
-	b		foreverLoop
+	b	foreverLoop
